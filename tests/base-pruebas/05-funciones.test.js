@@ -21,7 +21,7 @@ describe('Pruebas en 05-funciones.js', () => {
 
         const user = getUsuarioActivo( name );
 
-        expect( user ).toStrictEqual({
+        expect( user ).toStrictEqual({          // toStrictEqual es muy parecido a toEqual
             uid: 'ABC567',
             username: name
         });
