@@ -31,7 +31,6 @@ FirstApp.propTypes = {
 FirstApp.defaultProps = {               // Valores por defecto
     name: 'Elliot Alderson',               
     subtitle: 'No hay subtitulo',
-    title: 'No hay titulo'
 }
 
 // <code> Sirve para darle formato de codigo
