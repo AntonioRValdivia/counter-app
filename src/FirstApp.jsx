@@ -15,7 +15,7 @@ export const FirstApp = ( {title, subtitle, name} ) => {      // Se puede desest
 
     return (
     <>                                {/* Fragment, no se renderiza en el DOM */}
-        <h1>{ title }</h1>          {/*Recibe el title desde las props en main.jsx*/}
+        <div data-testid="test-title">{ title }</div>          {/*Recibe el title desde las props en main.jsx*/}
         {/* <code>{ JSON.stringify( newMessage )}</code> */}   {/* Se puede imprimir el obj transformandolo*/}
         <p>{ subtitle }</p>
         <p>{ name }</p>
