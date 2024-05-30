@@ -29,7 +29,7 @@ describe('Pruebas en <FirstApp />', () => {
         const { container, getByText, getByTestId } = render( <FirstApp title={ title } /> ); // getByText() es un método de que busca un texto en el DOM
         expect( getByText(title) ).toBeTruthy();      // toBeTruthy() comprueba si el elemento existe
 
-        // const h1 = container.querySelector('h1');
+        // const h1 = container.querySelector('h1');  // Con funciones de JS
         // expect(h1.innerHTML).toContain( title );
         expect( getByTestId('test-title').innerHTML ).toContain( title ); // Se usa el data-testid para encontrar el elemento
 
@@ -47,7 +47,7 @@ describe('Pruebas en <FirstApp />', () => {
         ); 
 
 
-        expect( getAllByText(subtitle).length ).toBe(1);
+        expect( getAllByText(subtitle).length ).toBe(1); // Busca cuantos elementos con el texto hay
 
     })
 
